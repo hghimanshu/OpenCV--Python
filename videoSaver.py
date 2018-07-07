@@ -1,6 +1,7 @@
 import cv2
 
 cap = cv2.VideoCapture(0)
+
 name = 'output.avi'
 fps = 25.0
 frameSize = (640, 480)
@@ -13,7 +14,7 @@ while True:
     cv2.imshow('frame',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-# Release everything if job is finished
+
 cap.release()
 out.release()
 cv2.destroyAllWindows()
