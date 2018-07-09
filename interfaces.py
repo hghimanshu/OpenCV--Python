@@ -2,7 +2,7 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
-color = (0,255,0)
+color = (255,0,0)
 thickness = 3
 radius = 15
 point = (10,10)
