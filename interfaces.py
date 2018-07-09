@@ -16,7 +16,7 @@ def cursor_locator(event, x, y, flags, param):
 cv2.namedWindow("Frame")
 cv2.setMouseCallback("Frame", cursor_locator)
 
-while(True):
+while True:
     ret, frame = cap.read()
     
     cv2.circle(frame, point, radius, color, thickness)
